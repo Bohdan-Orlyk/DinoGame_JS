@@ -23,7 +23,7 @@ setInterval(function () {
 	document.querySelector('#score').innerHTML = "Score: " + score;	
 	score += 1;
 
-	if(cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
+	if(cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 135) {
 		if (recordValue < score) {
 			recordValue = score;
 		}
