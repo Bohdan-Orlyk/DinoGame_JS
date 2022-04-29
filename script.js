@@ -25,7 +25,7 @@ setInterval(function () {
 
 	if(cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 135) {
 		if (recordValue < score) {
-			recordValue = score;
+			recordValue = score-2;
 		}
 
 		score = 0;
