@@ -52,8 +52,12 @@
 		top: 90px;
 	}
 
-	70% {
+	60% {
 		top: 100px;
+	}
+
+	70% {
+		top: 110px;
 	}
 
 	80% {
@@ -63,4 +67,14 @@
 	100% {
 		top: 150px;
 	}
+}
+
+#info{
+	width: 100px;
+	height: 50px;
+	border: 1px solid ;
+	position: absolute;
+	top: 20px;
+	left: 877px;
+	align-items: center;
 }

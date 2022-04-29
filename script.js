@@ -1,5 +1,7 @@
 const dino = document.getElementById("dino");
 const cactus = document.getElementById("cactus");
+let score = 0;
+let recordValue = 0;
 
 document.addEventListener("keydown", function(event) { 
 	jump(); 
@@ -14,11 +16,23 @@ function jump() {
 	}, 350)
 }
 
-let isAlive = setInterval(function () {
+setInterval(function () {
 	let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
 	let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
 
-	if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
-		alert("GAME OVER!!!")
-	}
-}, 10);
+	document.querySelector('#score').innerHTML = "Score: " + score;	
+	score += 1;
+
+	if(cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
+		if (recordValue < score) {
+			recordValue = score;
+		}
+
+		score = 0;
+		alert("GAME OVER! Record: " + recordValue);
+	}		
+
+}, 100);
+
+
+
