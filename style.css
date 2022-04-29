@@ -3,6 +3,7 @@
 	height: 200px;
 	border-bottom: 1px solid black;
 	margin: auto;
+	background-color: #F1F1F1;
 }
 
 #dino{
@@ -24,6 +25,70 @@
 	left: 580px;
 	animation: cactusMove 1.5s infinite linear;
 }
+
+#cloud{
+	width: 100px;
+	height: 50px;
+	background-image: url(img/cloud.png);
+	background-size: 100px 50px;
+	position: relative;
+	top: -45px;
+	left: 500px;
+	animation: cloudMove 5s infinite linear;
+}
+
+#cloud_1{
+	width: 100px;
+	height: 50px;
+	background-image: url(img/cloud_1.png);
+	background-size: 100px 50px;
+	position: relative;
+	top: -145px;
+	left: 590px;
+	animation: cloudMoveOne 1.5s infinite linear;
+}
+
+#cloud_2{
+	width: 100px;
+	height: 50px;
+	background-image: url(img/cloud_2.png);
+	background-size: 100px 50px;
+	position: relative;
+	top: -175px;
+	left: 500px;
+	animation: cloudMoveTwo 3s infinite linear;
+}
+
+@keyframes cloudMove{
+	0%{
+		left: 350px;
+	}
+
+	100%{
+		left: -20px;
+	}
+}
+
+@keyframes cloudMoveOne{
+	0%{
+		left: 390px;
+	}
+
+	100%{
+		left: -20px;
+	}
+}
+
+@keyframes cloudMoveTwo{
+	0%{
+		left: 390px;
+	}
+
+	100%{
+		left: -20px;
+	}
+}
+
 
 @keyframes cactusMove{
 	0%{
